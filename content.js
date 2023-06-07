@@ -1,13 +1,14 @@
-// 広告要素を非表示にする関数
-function hideAd() {
-  // 広告要素を特定するためのセレクターを使用して要素を取得
-  var adElement = document.querySelector('.adsbygoogle'); // クラス名が「ad」の要素を取得する例
-
-  // 要素が存在する場合は非表示にする
-  if (adElement) {
-    adElement.style.display = 'none';
-  }
+// 要素を非表示にする関数
+function hideElement(selector) {
+  var elements = document.querySelectorAll(selector);
+  elements.forEach(function(element) {
+    element.style.display = 'none';
+  });
 }
 
-// 広告を非表示にするための関数を呼び出す
-hideAd();
+// 非表示にしたい要素のセレクターを指定して、hideElement関数を呼び出す
+// 例: クラス名が「ad」の要素を非表示にする
+hideElement('.ad');
+
+// 例: idが「banner」の要素を非表示にする
+hideElement('#banner');
