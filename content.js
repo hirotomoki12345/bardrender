@@ -11,4 +11,4 @@ function hideElement(selector) {
 hideElement('.ad');
 
 // 例: idが「banner」の要素を非表示にする
-hideElement('#banner');
+hideElement('#reveal-ad');
