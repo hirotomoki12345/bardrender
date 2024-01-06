@@ -9,7 +9,7 @@ async function askQuestion(question) {
     const assistant = new BardAPI();
 
     // Set session information for authentication if needed
-    // await assistant.setSession('__Secure-1PSID', 'YourSecure1PSIDToken');
+    await assistant.setSession('__Secure-1PSID', 'ewh942BBNHbXmI-ztPg1s4BCmqKgCp0edfxDFdU9jeZMMyhTpTRfvQ9tvsoDR4n5qM1lAw.');
 
     // Send a query to Bard
     const response = await assistant.getBardResponse(question);
